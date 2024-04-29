@@ -112,11 +112,14 @@ img{
 /* ------------------------------------------------ */
 
 /* -------------------------menu----------------------- */
-.modal-overlay {
+.menu-overlay {
     background-color: #fcfcfc;
-
-    max-width: 320px;
+    width: 100%;
     height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    
     align-items: center;
     padding: 24px 24px 40px 16px;
     visibility: hidden;
@@ -125,7 +128,7 @@ img{
    
 }
 
-.modal-overlay.is-open {
+.menu-overlay.is-open {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
@@ -159,11 +162,6 @@ img{
 }
 
 .menu-box{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
     display: flex;
     flex-direction: column;
 }
