@@ -251,7 +251,6 @@ img{
     background-color: #2e2f42;
     padding: 72px 0;
     margin:  auto;
-    max-width: 320px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/people-office-mob.jpg);
@@ -320,15 +319,6 @@ img{
     }
 }
 
-@media screen and (min-width:1158px) {
-    .section-hero {
-        background-color: #2e2f42;
-        background-image: linear-gradient(to bottom,
-                rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/people-office.jpg);
-    }
-}
 /* ------------------------------------------------ */
 
 /* -----------------------SECTION-FEATURES------------------------- */
@@ -340,8 +330,6 @@ img{
     text-align: left;
     padding: 120px 0;
     background-color: #FFFFFF;
-    max-width: 320px;
-    margin: auto;
 }
 
 .visually-hidden {
@@ -1138,6 +1126,14 @@ textarea {
         display: none;
     }
 
+.section-hero{
+    background-color: #2e2f42;
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-tab.jpg);
+}
+
         @media screen and (min-resolution:2dppx),
         (min-resolution:192dpi) {
             .section-hero {
@@ -1411,7 +1407,12 @@ textarea {
         display: none;
     }
 
-    .hsection-hero {
+    .section-hero {
+                background-color: #2e2f42;
+                background-image: linear-gradient(to bottom,
+                        rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url(../images/people-office.jpg);
         background-color: #2e2f42;
         max-width: 1440px;
         background-repeat: no-repeat;
@@ -1448,7 +1449,7 @@ textarea {
                padding: 120px 0;
                background-color: #FFFFFF;
            }
-    ..features-list {
+    .features-list {
         display: flex;
         gap: 24px;
     }
@@ -1524,9 +1525,9 @@ textarea {
 
     .portfolio-list {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         gap: 48px 24px;
-        row-gap: 48px;
         padding-left: 0;
         margin: 0;
     }
